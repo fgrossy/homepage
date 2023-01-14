@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    
-    <title>TOP TRZY POWODY DLACZEGO POTRZEBUJE ZAMOWIC CIUCHY :))))</title>
+    <meta charset="UTF-8">
+    <title>NABOR NA PROGRAMISTE</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <h2 style="color:green;">BEDE MIAL DRIP I SWAG 0-0</h2>
-      <img src="usmiech.png" alt="usmiech" width="128" height="128">
-      <h2 style="color:green;">BEDZIE OGIEN I ZMOTYWUJE MNIE TO DO NAUKI :)))</h2>
-      <img src="drip.png" alt="drip" width="128" height="100">
-    </main>
+    <h1>Prosze wypelnic ankiete </h1>
+    <p>prosze wypelnic ankiete z wymaganymi informacjami</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Podaj imie: <input id="imie" name="imie" type="text" required /></label>
+        <label for="last-name">Podaj nazwisko: <input id="nazwisko" name="nazwisko" type="text" required /></label>
+        <label for="email">Podaj email: <input id="email" name="email" type="email" required /></label>
+        <label for="nowe-haslo">Stworz nowe haslo</label>: <input id="nowe-haslo" name="nowe-haslo" type="haslo" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="konto-personalne"><input id="konto-personalne" type="radio" name="typ-konta" class="inline" />Konto Personalne</label>
+        <label for="business-account"><input id="konto-firmowe" type="radio" name="typ-konta" class="inline" />Konto Firmowe</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Akceptuje  <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="zdjecie-profilowe">Dodaj zdjecie profilowe: <input id="zdjecie-profilowe" type="file" name="file" /></label>
+        <label for="wiek">Podaj wiek : <input id="wiek" type="number" name="wike" min="13" max="120" /></label>
+        <label for="referrer">Zkad dowiedizales sie o tej ankiecie?
+          <select id="referrer" name="referrer">
+            <option value="">(wybierz opcje)</option>
+            <option value="1">Nasz profil na facebooku</option>
+            <option value="2">Nasz profil na youtube</option>
+            <option value="3">Nasz profil na instagramie</option>
+            <option value="4">Inne</option>
+          </select>
+        </label>
+        <label for="bio">Stworz swoje bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
